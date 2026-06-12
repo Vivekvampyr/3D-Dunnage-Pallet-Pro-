@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": "admin-default-id",
+      "email": "admin@company.com",
+      "password": "$2a$10$PH3N0G92SR3i67ygjGybCe7cQpGVZAT6vblOuO.JreV1a5lTKnY6a",
+      "createdAt": "2026-06-12T06:15:13.750Z"
+    }
+  ],
+  "inquiries": []
+}

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DUNNAGE PRO — Premium Dunnage Pallet Solutions for Modern Logistics</title>
+  <meta name="description" content="Engineered dunnage pallet solutions for safer, faster, and more efficient warehousing. Premium industrial logistics protection built for the future.">
+  <meta property="og:title" content="DUNNAGE PRO — Premium Dunnage Pallet Solutions">
+  <meta property="og:description" content="Smarter Protection For Modern Logistics. Engineered Dunnage Pallet Solutions.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0d0d0d">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="no-scroll">
+
+  <!-- =========================================
+       PRELOADER
+       ========================================= -->
+  <div id="preloader" role="status" aria-label="Loading">
+    <div class="preloader-brand">DUNNAGE<span>PRO</span></div>
+    <div class="preloader-bar">
+      <div class="preloader-progress" id="preloader-progress"></div>
+    </div>
+  </div>
+
+
+  <!-- =========================================
+       HEADER / NAVIGATION
+       ========================================= -->
+  <header id="site-header" class="site-header">
+    <div class="header-container">
+      <a href="#hero" class="header-logo">DUNNAGE<span>PRO</span></a>
+      <nav class="desktop-nav" aria-label="Desktop navigation">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#warehouse" class="nav-link">Warehouse</a>
+        <a href="#problems" class="nav-link">Challenges</a>
+        <a href="#solution" class="nav-link">Solution</a>
+        <a href="#cta" class="nav-link">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="hamburger-line line-1"></span>
+        <span class="hamburger-line line-2"></span>
+        <span class="hamburger-line line-3"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Sidebar Menu -->
+  <div class="mobile-sidebar" id="mobile-sidebar" aria-hidden="true">
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <div class="sidebar-content">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">DUNNAGE<span>PRO</span></div>
+      </div>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#hero" class="sidebar-link">Home</a>
+        <a href="#warehouse" class="sidebar-link">Warehouse</a>
+        <a href="#problems" class="sidebar-link">Challenges</a>
+        <a href="#solution" class="sidebar-link">Solution</a>
+        <a href="#cta" class="sidebar-link">Contact</a>
+      </nav>
+      <div class="sidebar-footer">
+        <p>&copy; 2026 DunnagePro. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================
+       SECTION 1 — HERO
+       ========================================= -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-bg" id="hero-bg" style="background-image: url('assets/Warehouse_Exterior_Image.png')"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="login-card" id="login-card">
+        <div class="login-brand">DUNNAGE<span>PRO</span></div>
+        <h1 id="hero-headline">Smarter Protection For Modern Logistics</h1>
+        <p class="hero-subtitle" id="hero-subtitle">Engineered Dunnage Pallet Solutions For Safer, Faster, And More Efficient Warehousing.</p>
+
+        <form id="login-form" class="login-form" novalidate>
+          <div class="login-field" id="login-field-email">
+            <label for="login-email">Email Address</label>
+            <div class="login-input-wrap">
+              <svg class="login-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <input type="email" id="login-email" name="email" placeholder="you@company.com" autocomplete="email" required>
+            </div>
+          </div>
+
+          <div class="login-field" id="login-field-password">
+            <label for="login-password">Password</label>
+            <div class="login-input-wrap">
+              <svg class="login-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <input type="password" id="login-password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+            </div>
+          </div>
+
+          <div class="login-options">
+            <label class="remember-me">
+              <input type="checkbox" id="remember-me">
+              <span class="checkmark"></span>
+              <span>Remember me</span>
+            </label>
+            <a href="#" class="forgot-link" id="forgot-link">Forgot password?</a>
+          </div>
+
+          <p class="login-error" id="login-error" role="alert"></p>
+
+          <button type="submit" class="enter-btn" id="enter-btn" aria-label="Log in and enter the warehouse">
+            Enter Warehouse
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="scroll-hint" id="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- Gate Video Overlay -->
+  <div class="gate-container" id="gate-container" aria-hidden="true">
+    <video id="gate-video" muted playsinline preload="auto">
+      <source src="assets/Gate Opening.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Light Beams -->
+  <div class="light-beams" id="light-beams" aria-hidden="true">
+    <div class="beam beam-1"></div>
+    <div class="beam beam-2"></div>
+    <div class="beam beam-3"></div>
+  </div>
+
+  <!-- Transition Overlay -->
+  <div class="transition-overlay" id="transition-overlay" aria-hidden="true"></div>
+
+
+  <!-- =========================================
+       SECTION 2 — WAREHOUSE IMMERSIVE SCROLL
+       ========================================= -->
+  <section id="warehouse" aria-label="Warehouse Experience">
+    <div class="warehouse-sticky">
+      <div class="warehouse-media">
+        <img src="assets/Warehouse_Interior_Image.png" alt="Industrial warehouse interior" class="warehouse-fallback" loading="lazy">
+        <video id="warehouse-video" muted playsinline preload="auto">
+          <source src="assets/Warehouse_Interior_Video.mp4" type="video/mp4">
+        </video>
+        <div class="warehouse-ambient"></div>
+        <canvas id="particles" aria-hidden="true"></canvas>
+      </div>
+
+      <!-- Text panels that appear during scroll -->
+      <div class="warehouse-text warehouse-text-1" id="wh-text-1">
+        <h2>Step Inside</h2>
+        <p>The Future Of Warehousing</p>
+        <div class="accent-line"></div>
+      </div>
+
+      <div class="warehouse-text warehouse-text-2" id="wh-text-2">
+        <h2>Where Innovation</h2>
+        <p>Meets Industrial Strength</p>
+        <div class="accent-line"></div>
+      </div>
+
+      <div class="warehouse-text warehouse-text-3" id="wh-text-3">
+        <h2>Precision. Protection.</h2>
+        <p>Performance.</p>
+        <div class="accent-line"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================
+       SECTION 3 — PROBLEM STATEMENTS (Ultraviolette-style)
+       ========================================= -->
+  <section id="problems" aria-label="Industry Challenges">
+    <div class="problems-sticky">
+      
+      <!-- Section intro header -->
+      <div class="problems-intro" id="problems-intro">
+        <div class="problems-intro-inner">
+          <span class="section-label">The Challenge</span>
+          <h2>Industry Pain Points</h2>
+          <p class="problems-header-sub">Critical challenges that cost the logistics industry billions every year</p>
+        </div>
+      </div>
+
+      <!-- Full-screen slides container -->
+      <div class="problem-slide-container" id="problem-slide-container">
+
+        <!-- Slide 1 -->
+        <div class="problem-slide" id="problem-slide-1">
+          <div class="problem-slide-bg">
+            <img src="assets/problem statements/PRODUCT DAMAGE DURING TRANSPORTATION.png" alt="Product damage during transportation">
+          </div>
+          <div class="problem-slide-overlay"></div>
+          <div class="problem-slide-content">
+            <span class="problem-num">01</span>
+            <h3 class="problem-title">Product Damage<br>During Transportation</h3>
+            <div class="problem-line"></div>
+            <p class="problem-desc">Fragile storage systems lead to damaged goods, financial losses, and operational disruption during transportation.</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="problem-slide" id="problem-slide-2">
+          <div class="problem-slide-bg">
+            <img src="assets/problem statements/INEFFICIENT FLOOR STACKING.png" alt="Inefficient floor stacking">
+          </div>
+          <div class="problem-slide-overlay"></div>
+          <div class="problem-slide-content">
+            <span class="problem-num">02</span>
+            <h3 class="problem-title">Inefficient<br>Floor Stacking</h3>
+            <div class="problem-line"></div>
+            <p class="problem-desc">Unorganized floor stacking wastes valuable warehouse space and slows down daily operations.</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="problem-slide" id="problem-slide-3">
+          <div class="problem-slide-bg">
+            <img src="assets/problem statements/POOR LOAD DISTRIBUTION.png" alt="Poor load distribution">
+          </div>
+          <div class="problem-slide-overlay"></div>
+          <div class="problem-slide-content">
+            <span class="problem-num">03</span>
+            <h3 class="problem-title">Poor Load<br>Distribution</h3>
+            <div class="problem-line"></div>
+            <p class="problem-desc">Improper load balancing increases instability, safety risks, and transportation failures.</p>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="problem-slide" id="problem-slide-4">
+          <div class="problem-slide-bg">
+            <img src="assets/problem statements/MOISTURE AND IMPACT DAMAGE.png" alt="Moisture and impact damage">
+          </div>
+          <div class="problem-slide-overlay"></div>
+          <div class="problem-slide-content">
+            <span class="problem-num">04</span>
+            <h3 class="problem-title">Moisture And<br>Impact Damage</h3>
+            <div class="problem-line"></div>
+            <p class="problem-desc">Exposure to moisture and impact can severely affect product safety and inventory quality.</p>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="problem-slide" id="problem-slide-5">
+          <div class="problem-slide-bg">
+            <img src="assets/problem statements/SLOW MATERIAL HANDLING.png" alt="Slow material handling">
+          </div>
+          <div class="problem-slide-overlay"></div>
+          <div class="problem-slide-content">
+            <span class="problem-num">05</span>
+            <h3 class="problem-title">Slow Material<br>Handling</h3>
+            <div class="problem-line"></div>
+            <p class="problem-desc">Inefficient warehouse movement reduces productivity and delays logistics performance.</p>
+          </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="problem-slide" id="problem-slide-6">
+          <div class="problem-slide-bg">
+            <img src="assets/problem statements/UNSAFE PALLET SYSTEMS.png" alt="Unsafe pallet systems">
+          </div>
+          <div class="problem-slide-overlay"></div>
+          <div class="problem-slide-content">
+            <span class="problem-num">06</span>
+            <h3 class="problem-title">Unsafe Pallet<br>Systems</h3>
+            <div class="problem-line"></div>
+            <p class="problem-desc">Weak pallet systems create unstable storage conditions and increase operational risk.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Progress indicator -->
+      <div class="problem-progress" id="problem-progress">
+        <div class="problem-progress-dots">
+          <button class="progress-dot active" data-slide="0"></button>
+          <button class="progress-dot" data-slide="1"></button>
+          <button class="progress-dot" data-slide="2"></button>
+          <button class="progress-dot" data-slide="3"></button>
+          <button class="progress-dot" data-slide="4"></button>
+          <button class="progress-dot" data-slide="5"></button>
+        </div>
+        <div class="problem-counter" id="problem-counter">
+          <span class="counter-current" id="counter-current">01</span>
+          <span class="counter-sep">/</span>
+          <span class="counter-total">06</span>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+
+  <!-- =========================================
+       SECTION 4 — PRODUCT REVEAL / SOLUTION
+       ========================================= -->
+  <section id="solution" aria-label="Dunnage Pallet Solution">
+    <div class="solution-sticky" id="solution-sticky">
+      
+      <!-- Massive Background Typography (Parallax) -->
+      <div class="solution-bg-text" id="solution-bg-text">
+        DUNNAGE PRO
+      </div>
+
+      <!-- Cinematic Product Reveal (Centers and scales) -->
+      <div class="product-showcase" id="product-showcase">
+        <div class="product-spotlight" id="product-spotlight"></div>
+        <img class="product-image" id="product-image" src="assets/Dunnage Pallet Product Image.png" alt="Engineered Dunnage Pallet" loading="lazy">
+      </div>
+
+      <!-- Hero Headline for this section -->
+      <div class="solution-headline" id="solution-headline">
+        <h2>The Foundation Of<br><span>Efficient</span> Logistics</h2>
+      </div>
+
+      <!-- Horizontal Scrolling Track for Benefits -->
+      <div class="benefits-track-container" id="benefits-track-container">
+        <div class="benefits-track" id="benefits-track">
+          
+          <!-- Benefit 1 -->
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>Maximum Stability</h3>
+            <p>Engineered for maximum load stability and protection during high-speed transit.</p>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3>Smart Stacking</h3>
+            <p>Optimized warehouse space with modular, interlocking stacking architecture.</p>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <h3>Industrial Grade</h3>
+            <p>Built to withstand severe industrial transportation and environmental conditions.</p>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3>Supply Efficiency</h3>
+            <p>Improves operational efficiency and turnaround times across the entire supply chain.</p>
+          </div>
+
+          <!-- Benefit 5 -->
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 4 23 10 17 10"></polyline>
+                <polyline points="1 20 1 14 7 14"></polyline>
+                <path d="m3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+              </svg>
+            </div>
+            <h3>Long-term ROI</h3>
+            <p>Durable, reusable, and designed for years of flawless performance.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================
+       SECTION 5 — FINAL CTA
+       ========================================= -->
+  <section id="cta" aria-label="Call to Action">
+    <div class="cta-bg"></div>
+
+    <div class="cta-content">
+      <h2 id="cta-headline">Built For The Future Of Industrial Logistics</h2>
+      <p class="cta-subtitle" id="cta-subtitle">Protect Your Products. Improve Efficiency. Scale Smarter.</p>
+
+      <div class="cta-buttons" id="cta-buttons">
+        <button class="btn-primary" id="btn-quote">
+          Request A Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+        <button class="btn-secondary" id="btn-contact">Contact Us</button>
+      </div>
+
+      <!-- Contact / Inquiry Form -->
+      <div class="contact-form-container" id="contact-form">
+        <h3 class="form-title">Get In Touch</h3>
+        <form id="inquiry-form" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="form-name">Full Name</label>
+              <input type="text" id="form-name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email Address</label>
+              <input type="email" id="form-email" name="email" placeholder="john@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="form-company">Company</label>
+              <input type="text" id="form-company" name="company" placeholder="Company Name">
+            </div>
+            <div class="form-group">
+              <label for="form-phone">Phone</label>
+              <input type="tel" id="form-phone" name="phone" placeholder="+1 (555) 000-0000">
+            </div>
+            <div class="form-group full-width">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" name="message" placeholder="Tell us about your logistics requirements..."></textarea>
+            </div>
+            <div class="form-group full-width form-submit">
+              <button type="submit" class="btn-primary" id="form-submit-btn">
+                Send Inquiry
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Trust Indicators -->
+      <div class="trust-indicators" id="trust-indicators">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </div>
+          <span class="trust-value">ISO 9001</span>
+          <span class="trust-label">Certified</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <span class="trust-value">500+</span>
+          <span class="trust-label">Clients Worldwide</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <span class="trust-value">10+</span>
+          <span class="trust-label">Years Experience</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <span class="trust-value">99.9%</span>
+          <span class="trust-label">Delivery Rate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================
+       FOOTER
+       ========================================= -->
+  <footer id="footer">
+    <div class="footer-brand">DUNNAGE<span>PRO</span></div>
+    <p class="footer-text">&copy; 2026 DunnagePro. All rights reserved. Premium Industrial Logistics Solutions.</p>
+  </footer>
+
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="main.js"></script>
+</body>
+</html>
