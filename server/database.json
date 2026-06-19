@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": "admin-default-id",
+      "email": "admin@company.com",
+      "password": "$2b$10$tpC1mbdjQyEe5u9YBajV3.2iZ9voqUXJpJVjXaNALjUpjgAthM1wG",
+      "createdAt": "2026-06-12T06:30:35Z"
+    },
+    {
+      "id": "1781245905933",
+      "email": "testuser@gmail.com",
+      "password": "$2b$10$WXd8wmTOjzTEi7e8o9PQuumUU1DNpPvZWmYlVhTei4W3t8tEzje/S",
+      "createdAt": "2026-06-12T06:31:45Z"
+    },
+    {
+      "id": "1781247215407",
+      "email": "mannusuar@gmail.com",
+      "password": "$2b$10$lkQ14/0jb7O4Pg3fEBThLOZhne01XhT348NZE1SFBDmxDO9wmoyHu",
+      "createdAt": "2026-06-12T06:53:35Z"
+    }
+  ],
+  "inquiries": [
+    {
+      "id": "1781246052895",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "company": "ACME Corp",
+      "phone": "123-456-7890",
+      "message": "This is a test inquiry for the FastAPI backend migration.",
+      "createdAt": "2026-06-12T06:34:12Z"
+    }
+  ]
+}

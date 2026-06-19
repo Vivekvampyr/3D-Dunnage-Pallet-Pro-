@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import Lenis from 'lenis';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -118,7 +118,7 @@ export default function App() {
   };
 
   // Launch smooth scroll and bind spy checks upon successful entry
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!isLoggedIn) return;
 
     const whSection = document.getElementById('warehouse');

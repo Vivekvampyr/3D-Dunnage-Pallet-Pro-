@@ -50,7 +50,7 @@ export default function Hero({ onLoginSuccess }) {
 
       const data = await response.json();
       if (!response.ok) {
-        showError(data.message || 'Authentication failed.');
+        showError(data.detail || data.message || 'Authentication failed.');
         return;
       }
 

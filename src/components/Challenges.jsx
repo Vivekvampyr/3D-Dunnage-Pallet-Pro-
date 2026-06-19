@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useLayoutEffect, useState, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -47,7 +47,7 @@ export default function Challenges() {
     }
   ];
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     // Intro header entry fade
     gsap.from('.problems-intro-inner', {
       scrollTrigger: {

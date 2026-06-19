@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import PalletModel from './PalletModel';
@@ -65,7 +65,7 @@ export default function Solution() {
     }
   ];
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const track = trackRef.current;
     const solutionSec = containerRef.current;
     const showcase = showcaseRef.current;

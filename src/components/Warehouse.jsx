@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -34,7 +34,7 @@ export default function Warehouse() {
     };
   }, []);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const container = containerRef.current;
     const video = videoRef.current;
     if (!container || !video) return;

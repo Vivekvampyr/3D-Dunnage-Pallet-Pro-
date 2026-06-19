@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useLayoutEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -16,7 +16,7 @@ export default function Contact() {
   const formRef = useRef();
   const nameInputRef = useRef();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const container = containerRef.current;
     if (!container) return;
 
